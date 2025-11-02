@@ -1,0 +1,17 @@
+{
+  "train_rmse": 0.08830825988024786,
+  "test_rmse": 0.08369205280233313,
+  "train_r2": 0.9850634569214795,
+  "test_r2": 0.9859829530074539,
+  "test_mae": 0.0681771212721621,
+  "feature_importance": {
+    "altitude_current": 0.20240233838558197,
+    "altitude_7d_decay": 0.08864616602659225,
+    "altitude_30d_decay": 0.0919300764799118,
+    "f107_current": 0.023024654015898705,
+    "f107_7d_avg": 0.08649910986423492,
+    "drag_vulnerability": 0.08000406622886658,
+    "mean_motion_current": 0.3523353636264801,
+    "eccentricity_current": 0.07515818625688553
+  }
+}

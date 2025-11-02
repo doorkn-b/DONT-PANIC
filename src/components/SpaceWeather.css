@@ -1,0 +1,210 @@
+.space-weather-sidebar {
+  position: absolute;
+  left: 30px;
+  top: 210px;
+  width: 280px;
+  max-height: calc(100vh - 230px);
+  padding: 15px;
+  color: #fff;
+  font-family: monospace;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 8px;
+  backdrop-filter: blur(15px);
+  z-index: 999;
+  animation: slideInLeft 0.3s ease;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.space-weather-loading,
+.space-weather-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #aaa;
+}
+
+.space-weather-error button {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background: rgba(0, 255, 255, 0.1);
+  border: 1px solid #00ffff;
+  color: #00ffff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: monospace;
+  transition: all 0.3s ease;
+}
+
+.space-weather-error button:hover {
+  background: rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+}
+
+.weather-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.3);
+}
+
+.weather-header h2 {
+  margin: 0;
+  color: #00ffff;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.refresh-btn {
+  background: rgba(0, 255, 255, 0.1);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  color: #00ffff;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.refresh-btn:hover {
+  background: rgba(0, 255, 255, 0.2);
+  border-color: #00ffff;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+  transform: rotate(180deg);
+}
+
+/* Stacked Cards */
+.weather-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.weather-card {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.weather-card:hover {
+  border-color: rgba(0, 255, 255, 0.5);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.15);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  background: rgba(0, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+}
+
+.card-header h3 {
+  margin: 0;
+  color: #00ffff;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.current-value {
+  display: flex;
+  align-items: baseline;
+  gap: 3px;
+}
+
+.current-value .value {
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 0 0 8px currentColor;
+}
+
+.current-value .unit {
+  font-size: 8px;
+  color: #888;
+}
+
+.chart-container {
+  position: relative;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Recharts custom styling */
+.recharts-text {
+  fill: #888;
+  font-family: monospace;
+}
+
+.recharts-cartesian-axis-tick-value {
+  fill: #888;
+}
+
+.recharts-tooltip-wrapper {
+  outline: none;
+}
+
+/* Scrollbar */
+.space-weather-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.space-weather-sidebar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.space-weather-sidebar::-webkit-scrollbar-thumb {
+  background: rgba(0, 255, 255, 0.3);
+  border-radius: 3px;
+}
+
+.space-weather-sidebar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 255, 255, 0.5);
+}
+
+/* Loading spinner */
+.spinner {
+  border: 3px solid rgba(0, 255, 255, 0.1);
+  border-top: 3px solid #00ffff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 15px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1400px) {
+  .space-weather-sidebar {
+    width: 250px;
+  }
+}

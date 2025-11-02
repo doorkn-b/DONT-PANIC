@@ -1,0 +1,185 @@
+{
+  "metadata": {
+    "generated_at": "2025-11-02T06:35:27.872426",
+    "model_version": "iss_decay_model_v1",
+    "total_satellites": 10,
+    "successful_predictions": 10,
+    "failed_predictions": 0,
+    "solar_conditions": {
+      "f107": 172.0,
+      "density_multiplier": 1.1733333333333333
+    }
+  },
+  "predictions": [
+    {
+      "norad_id": 25544,
+      "name": "ISS (ZARYA)",
+      "epoch": "2025-11-01T12:29:31.512768",
+      "current_altitude": 424.8,
+      "inclination": 51.6344,
+      "eccentricity": 0.00049334,
+      "predictions": {
+        "7_day": -0.10000000149011612,
+        "30_day": -0.4300000071525574,
+        "90_day": -1.2999999523162842
+      },
+      "decay_rate_km_per_day": -0.014285714365541935,
+      "risk_score": 32,
+      "risk_level": "LOW",
+      "predicted_at": "2025-11-02T06:35:24.378455"
+    },
+    {
+      "norad_id": 44713,
+      "name": "STARLINK-1007",
+      "epoch": "2024-10-02T14:54:18.306144",
+      "current_altitude": 200.01,
+      "inclination": 53.0382,
+      "eccentricity": 0.0008324,
+      "predictions": {
+        "7_day": 2.9000000953674316,
+        "30_day": 12.430000305175781,
+        "90_day": 37.290000915527344
+      },
+      "decay_rate_km_per_day": 0.41428571939468384,
+      "risk_score": 72,
+      "risk_level": "HIGH",
+      "predicted_at": "2025-11-02T06:35:24.744775"
+    },
+    {
+      "norad_id": 44714,
+      "name": "STARLINK-1008",
+      "epoch": "2025-11-01T10:57:10.545984",
+      "current_altitude": 554.39,
+      "inclination": 53.0555,
+      "eccentricity": 0.00015687,
+      "predictions": {
+        "7_day": -0.18000000715255737,
+        "30_day": -0.7599999904632568,
+        "90_day": -2.2699999809265137
+      },
+      "decay_rate_km_per_day": -0.025714287534356117,
+      "risk_score": 20,
+      "risk_level": "LOW",
+      "predicted_at": "2025-11-02T06:35:25.136207"
+    },
+    {
+      "norad_id": 44715,
+      "name": "STARLINK-1009",
+      "epoch": "2025-02-20T23:29:11.817600",
+      "current_altitude": 169.82,
+      "inclination": 53.0299,
+      "eccentricity": 0.0004716,
+      "predictions": {
+        "7_day": 2.9000000953674316,
+        "30_day": 12.430000305175781,
+        "90_day": 37.290000915527344
+      },
+      "decay_rate_km_per_day": 0.41428571939468384,
+      "risk_score": 84,
+      "risk_level": "CRITICAL",
+      "predicted_at": "2025-11-02T06:35:25.540940"
+    },
+    {
+      "norad_id": 44716,
+      "name": "STARLINK-1010",
+      "epoch": "2025-11-01T07:21:49.520160",
+      "current_altitude": 280.41,
+      "inclination": 53.0419,
+      "eccentricity": 0.00053472,
+      "predictions": {
+        "7_day": 2.9000000953674316,
+        "30_day": 12.430000305175781,
+        "90_day": 37.290000915527344
+      },
+      "decay_rate_km_per_day": 0.41428571939468384,
+      "risk_score": 72,
+      "risk_level": "HIGH",
+      "predicted_at": "2025-11-02T06:35:25.938535"
+    },
+    {
+      "norad_id": 44717,
+      "name": "STARLINK-1011",
+      "epoch": "2025-11-01T16:00:01.999584",
+      "current_altitude": 320.1,
+      "inclination": 53.0489,
+      "eccentricity": 0.00043748,
+      "predictions": {
+        "7_day": 2.9000000953674316,
+        "30_day": 12.420000076293945,
+        "90_day": 37.27000045776367
+      },
+      "decay_rate_km_per_day": 0.41428571939468384,
+      "risk_score": 60,
+      "risk_level": "HIGH",
+      "predicted_at": "2025-11-02T06:35:26.307650"
+    },
+    {
+      "norad_id": 44718,
+      "name": "STARLINK-1012",
+      "epoch": "2025-11-01T13:36:24.536160",
+      "current_altitude": 554.39,
+      "inclination": 53.0548,
+      "eccentricity": 0.00011554,
+      "predictions": {
+        "7_day": -0.1599999964237213,
+        "30_day": -0.6800000071525574,
+        "90_day": -2.0399999618530273
+      },
+      "decay_rate_km_per_day": -0.022857142612338066,
+      "risk_score": 20,
+      "risk_level": "LOW",
+      "predicted_at": "2025-11-02T06:35:26.710174"
+    },
+    {
+      "norad_id": 44719,
+      "name": "STARLINK-1013",
+      "epoch": "2025-09-01T02:56:58.680096",
+      "current_altitude": 150.21,
+      "inclination": 53.0317,
+      "eccentricity": 0.000748,
+      "predictions": {
+        "7_day": 2.9000000953674316,
+        "30_day": 12.430000305175781,
+        "90_day": 37.290000915527344
+      },
+      "decay_rate_km_per_day": 0.41428571939468384,
+      "risk_score": 84,
+      "risk_level": "CRITICAL",
+      "predicted_at": "2025-11-02T06:35:27.063998"
+    },
+    {
+      "norad_id": 44720,
+      "name": "STARLINK-1014",
+      "epoch": "2025-07-15T17:18:32.390208",
+      "current_altitude": 160.46,
+      "inclination": 53.01,
+      "eccentricity": 0.0009322,
+      "predictions": {
+        "7_day": 2.9000000953674316,
+        "30_day": 12.430000305175781,
+        "90_day": 37.290000915527344
+      },
+      "decay_rate_km_per_day": 0.41428571939468384,
+      "risk_score": 84,
+      "risk_level": "CRITICAL",
+      "predicted_at": "2025-11-02T06:35:27.420273"
+    },
+    {
+      "norad_id": 44721,
+      "name": "STARLINK-1015",
+      "epoch": "2025-10-03T21:39:26.376768",
+      "current_altitude": 171.01,
+      "inclination": 53.0278,
+      "eccentricity": 0.00040101,
+      "predictions": {
+        "7_day": 3.5299999713897705,
+        "30_day": 15.140000343322754,
+        "90_day": 45.41999816894531
+      },
+      "decay_rate_km_per_day": 0.5042856931686401,
+      "risk_score": 92,
+      "risk_level": "CRITICAL",
+      "predicted_at": "2025-11-02T06:35:27.872426"
+    }
+  ]
+}

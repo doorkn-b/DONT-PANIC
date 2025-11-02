@@ -1,0 +1,239 @@
+.anomaly-feed {
+  padding: 20px;
+}
+
+.anomaly-feed h2 {
+  font-size: 18px;
+  color: #00ffff;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.no-anomalies {
+  text-align: center;
+  padding: 30px 15px;
+  color: #666;
+  font-size: 12px;
+}
+
+.anomaly-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.anomaly-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.anomaly-card.explained {
+  border-color: rgba(0, 255, 0, 0.3);
+}
+
+.anomaly-card.probable {
+  border-color: rgba(255, 170, 0, 0.3);
+}
+
+.anomaly-card.unresolved {
+  border-color: rgba(255, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+}
+
+.anomaly-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.category-icon {
+  font-size: 20px;
+}
+
+.category-icon.explained {
+  color: #00ff00;
+}
+
+.category-icon.probable {
+  color: #ffaa00;
+}
+
+.category-icon.unresolved {
+  color: #ff0000;
+}
+
+.anomaly-id {
+  font-size: 10px;
+  color: #666;
+  font-family: monospace;
+  flex: 1;
+}
+
+.escalate-badge {
+  background: #ff0000;
+  color: #000;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: pulse 2s infinite;
+}
+
+.anomaly-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 10px;
+  font-size: 11px;
+  color: #888;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.anomaly-description {
+  font-size: 12px;
+  color: #ccc;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  font-style: italic;
+}
+
+.classification {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.classification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.category-badge {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.category-badge.explained {
+  background: #00ff00;
+  color: #000;
+}
+
+.category-badge.probable {
+  background: #ffaa00;
+  color: #000;
+}
+
+.category-badge.unresolved {
+  background: #ff0000;
+  color: #fff;
+}
+
+.confidence {
+  font-size: 11px;
+  color: #00ffff;
+  font-weight: 600;
+}
+
+.explanation {
+  font-size: 11px;
+  color: #fff;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.matched-satellite {
+  font-size: 11px;
+  color: #00ff00;
+  padding: 8px;
+  background: rgba(0, 255, 0, 0.1);
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+.matched-satellite strong {
+  color: #00ff00;
+}
+
+.unclassified {
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+  padding: 10px;
+}
+
+.spinner {
+  display: inline-block;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Triage Legend */
+.triage-legend {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  font-size: 11px;
+  color: #888;
+}
+
+.legend-item:last-child {
+  margin-bottom: 0;
+}
+
+.legend-icon {
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+}
+
+.legend-icon.explained {
+  color: #00ff00;
+}
+
+.legend-icon.probable {
+  color: #ffaa00;
+}
+
+.legend-icon.unresolved {
+  color: #ff0000;
+}
+
+.legend-text {
+  flex: 1;
+}

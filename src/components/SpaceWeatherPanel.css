@@ -1,0 +1,334 @@
+.space-weather-panel {
+  padding: 20px;
+}
+
+.space-weather-panel h2 {
+  font-size: 18px;
+  color: #ffaa00;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 170, 0, 0.3);
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.weather-status {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.status-indicator {
+  font-size: 36px;
+}
+
+.status-indicator.storm {
+  animation: pulse 2s infinite;
+}
+
+.status-text {
+  flex: 1;
+}
+
+.condition {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+.storm-level {
+  font-size: 12px;
+  color: #ff4444;
+  font-weight: 600;
+}
+
+.weather-metrics {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.weather-metric {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-metric .metric-label {
+  font-size: 11px;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.weather-metric .metric-value {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.kp-value {
+  color: #ffaa00;
+  font-size: 18px;
+}
+
+.metric-trend {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #888;
+}
+
+.density-mult {
+  color: #ff4444;
+}
+
+.weather-impact {
+  margin-top: 15px;
+  padding: 12px;
+  background: rgba(255, 170, 0, 0.1);
+  border-left: 3px solid #ffaa00;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.weather-impact strong {
+  color: #ffaa00;
+}
+
+/* Alerts */
+.alerts-section {
+  margin-bottom: 20px;
+}
+
+.alerts-section h3 {
+  font-size: 14px;
+  color: #ff4444;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.alert-card {
+  background: rgba(255, 68, 68, 0.1);
+  border-left: 3px solid #ff4444;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.alert-type {
+  font-size: 11px;
+  color: #ff4444;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.alert-desc {
+  font-size: 12px;
+  color: #ccc;
+  line-height: 1.4;
+}
+
+/* Orbital Shell Stress */
+.stress-layers-section {
+  margin-top: 20px;
+}
+
+.stress-layers-section h3 {
+  font-size: 14px;
+  color: #00ffff;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stress-subtitle {
+  font-size: 10px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.stress-layer-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.layer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.layer-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.stress-badge {
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.stress-badge.normal {
+  background: #00aa00;
+  color: #000;
+}
+
+.stress-badge.elevated {
+  background: #88ff00;
+  color: #000;
+}
+
+.stress-badge.high {
+  background: #ffaa00;
+  color: #000;
+}
+
+.stress-badge.severe {
+  background: #ff4400;
+  color: #fff;
+}
+
+.stress-badge.critical {
+  background: #ff0000;
+  color: #fff;
+  animation: pulse 2s infinite;
+}
+
+.layer-altitude {
+  font-size: 11px;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.stress-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stress-bar-item {
+  display: grid;
+  grid-template-columns: 60px 1fr 40px;
+  align-items: center;
+  gap: 8px;
+}
+
+.bar-label {
+  font-size: 10px;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.bar-container {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+
+.bar-fill.drag {
+  background: linear-gradient(90deg, #ff4400, #ff8800);
+}
+
+.bar-fill.radiation {
+  background: linear-gradient(90deg, #ff00ff, #ff44ff);
+}
+
+.bar-fill.tracking {
+  background: linear-gradient(90deg, #ffaa00, #ffcc00);
+}
+
+.bar-value {
+  font-size: 10px;
+  color: #fff;
+  text-align: right;
+}
+
+/* Impacts */
+.layer-impacts {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.impact-item {
+  display: flex;
+  gap: 8px;
+  font-size: 11px;
+  line-height: 1.4;
+  color: #ccc;
+}
+
+.impact-icon {
+  flex-shrink: 0;
+}
+
+.impact-item.severe {
+  color: #ff4444;
+}
+
+/* Affected Services */
+.affected-services {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.service-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.service-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.service-info {
+  flex: 1;
+}
+
+.service-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.service-impact {
+  font-size: 10px;
+  color: #ff8800;
+}

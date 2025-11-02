@@ -1,0 +1,16 @@
+# ML & Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+
+# API & HTTP
+requests>=2.31.0
+flask>=3.0.0
+flask-cors>=4.0.0
+
+# Space calculations
+sgp4>=2.21
+
+# Data storage (optional)
+python-dotenv>=1.0.0
