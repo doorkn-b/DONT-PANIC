@@ -107,5 +107,3 @@ MIT License - See LICENSE file for details
 - satellite.js community
 
 ---
-
-**Built with 🚀 by Arnab Mukherjee**
